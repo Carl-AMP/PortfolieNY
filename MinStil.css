@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(140, 247, 49, 0.64)
+}
+
+/* overskrift h1 design */
+h1{
+font-style: italic;
+}
+
+p{
+background-color: rgb(200,200,0)
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#image{
+    background-color:white;
+}

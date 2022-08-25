@@ -1,0 +1,44 @@
+body {
+    background-image: url(Pearorchard.jpg);
+    background-size: 1800px 1200px;
+}
+
+/* overskrift h1 design */
+h1{
+font-style: italic;
+}
+
+p{
+background-color: rgb(200,200,0)
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#image{
+    background-color:white;
+}
+
+
+.kasse{
+float: middle;
+background-color: rgb(160,200,0);
+width: 40%;
+height: 40%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+overflow: hidden;
+font-size: 40;
+}
+
+.image{
+width: 20%;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.kasse1{
+    float: middle;
+    background-color: white;
+    width: 20%
+    height: 10%
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
