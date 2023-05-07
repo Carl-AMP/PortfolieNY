@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="MinStil.css">
+<title>Kodestumper</title>
+</head>
+<h1>Kodestumper</h1> 
+
+<p>
+    Hjernen af vores kode ligger i funktionen motionDetect():
+</p>
+<img src="A1.png" alt="IT-security"width="400" height="200">
+
+<p>
+    Først nulstiller vi vores sensor (for sikkerheds skyld), med pir.wait_for_no_motion(). Det vil sige at koden vil ikke gå videre, indtil sensoren opdager ingen bevægelse. Det bekræftes med en print i terminalen: print(‘No motion detected’).
+
+Derefter skaber man et liste, “crisp”, som kommer til at indeholde de beregnet hastigheder. Det er hvad funktionen motionDetect() returnere. Her er hvordan det sker:
+
+1. Funktionen speed() er defineret:
+</p>
+
+<img src="A2.png" alt="IT-security"width="200" height="100">
+
+<p>
+    Den har en defineret variable, l, sæt til 7 (læs mere i “testmåling af sensor), tager et argument, t, og returnerer kvotienten af l divideret med t. Her genkender man godt formlen for middelhastigheden: v = d / t.
+
+2. Variablen t bliver udregnet længere ned i koden:
+</p>
+<img src="A3.png" alt="IT-security"width="400" height="100">
+<br>
+Den t er hvad vi sætter ind i funktionen, som dermed kan udregne hastigheden. Det er forskellen i tid mellem hvornår motion sensoren opdager bevægelse til den ikke gøre mere.
+
+3. Til sidst bruger vi Python’s built-in funktion .append(), som tager variablen t, sætter den ind i funktionen speed(), som så udregner hastigheden. Så tager man hastigheden og omdanner det til en string, med Python’s str() method.
+<br>
+<img src="A4.png" alt="IT-security"width="300" height="100">
+<p>
+    Her er et tilfældigt eksempel: t = 3.5 sekunder
+    speed(t) = speed(3.5) = 3.5 / 7 = 0.5
+    str(speed(3.5)) = ‘0.5’
+    Og det bliver til:
+    crisp.append(str(speed(3.5)))
+    Hvis vi skulle print det i terminalen, ville det give: [‘0.5’]
+    
+    Så definerer vi to variabler, “start” og “now”, til at være det tidspunkt hvor ingen motion er opdaget. “start” bruges for variablen t, og ved vores while-loop, mens “now” kun for vores while-loop. Til sidst defineres en sidste variable, duration, som sættes til at være 10200 sekunder, som svarer til 2 timer og 50 minutter.
+    
+    Vi har nu udregnet hastighedernes middelværdi:
+    
+    motionDetect() returnere “crisp”, som er en liste af alle hastigheder.
+</p>
+
+<img src="A5.png" alt="IT-security"width="200" height="100">
+
+<p>
+    Vi sætter en variable, data, til at være hvad funktionen returnerer, så “data” er en liste. Så sætter vi en tilfældige variable, her x, lig med 0, som bliver til summen af alle vores data i listen. “i” er en anden tilfældige variable, som man vil bruge til at “iterate” gennem data-listen:
+</p>
+
+<img src="A6.png" alt="IT-security"width="200" height="100">
+
+<p>
+    Her er et tilfældigt eksempel:
+
+Hvis data = [2, 3, 4, 5], så bliver x = 2 + 3 + 4 + 5 = 14
+
+Vi bruger float() til at specificere, at det tal den skal tage fra listen er hele kommatallet. Middelværdien beregnes med det nye x-værdi, som divideres med længden af listen, som vi får med len():
+</p>
+
+<img src="A7.png" alt="IT-security"width="400" height="100">
+<p>
+    Til sidst bruger vi csv-biblioteket til at kunne skrive vores data ind i en csv-fil således:
+</p>
+
+<img src="A8.png" alt="IT-security"width="200" height="100">
+
+<p>
+    Den første linje laver en ny fil som hedder “data.csv”, og skriver ind vores data, som er listen, og middelværdien “average”.
+</p>
+
+<a href="Astro.html"> Tilbage til Astro-pi hovedsiden </a>
