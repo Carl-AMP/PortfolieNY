@@ -1,17 +1,15 @@
 body {
-    background-color: rgba(140, 247, 49, 0.64)
+    background-image: url("Sun.jpg");
 }
 
-/* overskrift h1 design */
-h1{
-font-style: italic;
+h1 {
+    text-align: center;
 }
 
-p{
-background-color: rgb(200,200,0)
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+h2 {
+    text-align: center;
 }
 
-#image{
-    background-color:white;
+li.a {
+    text-align: center;
 }
