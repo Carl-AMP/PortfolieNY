@@ -8,25 +8,90 @@
 
 <body>
 <h1>Portfolie</h1>
-<p>
-Mit navn er Carl A. Plambech. Jeg går i 3. Y og jeg er elev i Informatik på Rysensteen Gymnasium. Dette er min portfolie:
-</p>
-
-
-<h2> Links til mine projekter: </h2>
-
-<br>
-    <ul>
-<li><a href="Webteknologier.html"> Om PEAR.com</a></li>
-        <br>
-  <li><a href="IT-sikkerhed.html">IT-sikkerhed</a></li>
-        <br> 
-  <li><a href="news.asp">TBD</a></li>
-        <br> 
-  <li><a href="contact.asp">TBD</a></li>
-        <br> 
-  <li><a href="about.asp">TBD</a></li>
-        <br> 
-</ul>
+<h2>
+Mit navn er Carl Plambech. Jeg går i 2020Y og jeg er elev i Informatik på Rysensteen Gymnasium. Dette er min portfolie:
+</h2>
+<style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #082745;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(23, 81, 104);
+      }
+      
+      li.dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {background-color: #57cbb2;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <ul>
+            <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Spil, leg og samarbejde</a>
+        <div class="dropdown-content">
+            <a href=Spil.html>Om forløbet</a>
+            <a href=https://editor.p5js.org/carl3279/full/wQQbyee07>Trullemann</a>
+          </div>
+          
+      </div>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Webteknologier</a>
+          <div class="dropdown-content">
+            <a href=Webteknologier.html>Om forløbet</a>
+            <a href=pear.html>Hjemmeside</a>
+            <a href=IT-sikkerhed.html>IT-sikkerhed</a>
+          </div>
+          <li><a href=Database.html>Databaser</a></li>
+        </li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Astro-pi</a>
+            <div class="dropdown-content">
+                <a href=Astro.html>Introduktion</a>
+                <a href=AstroESA.html>Kravspecifikationer</a>
+                <a href=AstroKO.html>Kodestumper</a>
+                <a href=Astro.ST.html>Sensore og testmålinger</a>
+                <a href=AstroFLOW.html>Flowchart</a></li>
+          
+      </ul>  
 </body>
 </html>
